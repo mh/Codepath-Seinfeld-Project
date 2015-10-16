@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC4A31091BD0A38300785025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31081BD0A38300785025 /* AppDelegate.swift */; };
+		EC4A310B1BD0A38300785025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A310A1BD0A38300785025 /* ViewController.swift */; };
+		EC4A310E1BD0A38300785025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A310C1BD0A38300785025 /* Main.storyboard */; };
+		EC4A31101BD0A38300785025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4A310F1BD0A38300785025 /* Assets.xcassets */; };
+		EC4A31131BD0A38300785025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */; };
+		EC4A311E1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A311D1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift */; };
+		EC4A31291BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31281BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC4A311A1BD0A38300785025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4A30FD1BD0A38300785025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4A31041BD0A38300785025;
+			remoteInfo = "Codepath Seinfeld Project";
+		};
+		EC4A31251BD0A38300785025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4A30FD1BD0A38300785025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4A31041BD0A38300785025;
+			remoteInfo = "Codepath Seinfeld Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC4A31051BD0A38300785025 /* Codepath Seinfeld Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codepath Seinfeld Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4A31081BD0A38300785025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC4A310A1BD0A38300785025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC4A310D1BD0A38300785025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC4A310F1BD0A38300785025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC4A31121BD0A38300785025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC4A31141BD0A38300785025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4A31191BD0A38300785025 /* Codepath Seinfeld ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Codepath Seinfeld ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4A311D1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codepath_Seinfeld_ProjectTests.swift; sourceTree = "<group>"; };
+		EC4A311F1BD0A38300785025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4A31241BD0A38300785025 /* Codepath Seinfeld ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Codepath Seinfeld ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4A31281BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codepath_Seinfeld_ProjectUITests.swift; sourceTree = "<group>"; };
+		EC4A312A1BD0A38300785025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC4A31021BD0A38300785025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31161BD0A38300785025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31211BD0A38300785025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC4A30FC1BD0A38300785025 = {
+			isa = PBXGroup;
+			children = (
+				EC4A31071BD0A38300785025 /* Codepath Seinfeld Project */,
+				EC4A311C1BD0A38300785025 /* Codepath Seinfeld ProjectTests */,
+				EC4A31271BD0A38300785025 /* Codepath Seinfeld ProjectUITests */,
+				EC4A31061BD0A38300785025 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC4A31061BD0A38300785025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31051BD0A38300785025 /* Codepath Seinfeld Project.app */,
+				EC4A31191BD0A38300785025 /* Codepath Seinfeld ProjectTests.xctest */,
+				EC4A31241BD0A38300785025 /* Codepath Seinfeld ProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC4A31071BD0A38300785025 /* Codepath Seinfeld Project */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31081BD0A38300785025 /* AppDelegate.swift */,
+				EC4A310A1BD0A38300785025 /* ViewController.swift */,
+				EC4A310C1BD0A38300785025 /* Main.storyboard */,
+				EC4A310F1BD0A38300785025 /* Assets.xcassets */,
+				EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */,
+				EC4A31141BD0A38300785025 /* Info.plist */,
+			);
+			path = "Codepath Seinfeld Project";
+			sourceTree = "<group>";
+		};
+		EC4A311C1BD0A38300785025 /* Codepath Seinfeld ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A311D1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift */,
+				EC4A311F1BD0A38300785025 /* Info.plist */,
+			);
+			path = "Codepath Seinfeld ProjectTests";
+			sourceTree = "<group>";
+		};
+		EC4A31271BD0A38300785025 /* Codepath Seinfeld ProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31281BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift */,
+				EC4A312A1BD0A38300785025 /* Info.plist */,
+			);
+			path = "Codepath Seinfeld ProjectUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4A31041BD0A38300785025 /* Codepath Seinfeld Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4A312D1BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld Project" */;
+			buildPhases = (
+				EC4A31011BD0A38300785025 /* Sources */,
+				EC4A31021BD0A38300785025 /* Frameworks */,
+				EC4A31031BD0A38300785025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Codepath Seinfeld Project";
+			productName = "Codepath Seinfeld Project";
+			productReference = EC4A31051BD0A38300785025 /* Codepath Seinfeld Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC4A31181BD0A38300785025 /* Codepath Seinfeld ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4A31301BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld ProjectTests" */;
+			buildPhases = (
+				EC4A31151BD0A38300785025 /* Sources */,
+				EC4A31161BD0A38300785025 /* Frameworks */,
+				EC4A31171BD0A38300785025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4A311B1BD0A38300785025 /* PBXTargetDependency */,
+			);
+			name = "Codepath Seinfeld ProjectTests";
+			productName = "Codepath Seinfeld ProjectTests";
+			productReference = EC4A31191BD0A38300785025 /* Codepath Seinfeld ProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC4A31231BD0A38300785025 /* Codepath Seinfeld ProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4A31331BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld ProjectUITests" */;
+			buildPhases = (
+				EC4A31201BD0A38300785025 /* Sources */,
+				EC4A31211BD0A38300785025 /* Frameworks */,
+				EC4A31221BD0A38300785025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4A31261BD0A38300785025 /* PBXTargetDependency */,
+			);
+			name = "Codepath Seinfeld ProjectUITests";
+			productName = "Codepath Seinfeld ProjectUITests";
+			productReference = EC4A31241BD0A38300785025 /* Codepath Seinfeld ProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC4A30FD1BD0A38300785025 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "matt hunter";
+				TargetAttributes = {
+					EC4A31041BD0A38300785025 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EC4A31181BD0A38300785025 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EC4A31041BD0A38300785025;
+					};
+					EC4A31231BD0A38300785025 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EC4A31041BD0A38300785025;
+					};
+				};
+			};
+			buildConfigurationList = EC4A31001BD0A38300785025 /* Build configuration list for PBXProject "Codepath Seinfeld Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC4A30FC1BD0A38300785025;
+			productRefGroup = EC4A31061BD0A38300785025 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC4A31041BD0A38300785025 /* Codepath Seinfeld Project */,
+				EC4A31181BD0A38300785025 /* Codepath Seinfeld ProjectTests */,
+				EC4A31231BD0A38300785025 /* Codepath Seinfeld ProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC4A31031BD0A38300785025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A31131BD0A38300785025 /* LaunchScreen.storyboard in Resources */,
+				EC4A31101BD0A38300785025 /* Assets.xcassets in Resources */,
+				EC4A310E1BD0A38300785025 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31171BD0A38300785025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31221BD0A38300785025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC4A31011BD0A38300785025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A310B1BD0A38300785025 /* ViewController.swift in Sources */,
+				EC4A31091BD0A38300785025 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31151BD0A38300785025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A311E1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4A31201BD0A38300785025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4A31291BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC4A311B1BD0A38300785025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4A31041BD0A38300785025 /* Codepath Seinfeld Project */;
+			targetProxy = EC4A311A1BD0A38300785025 /* PBXContainerItemProxy */;
+		};
+		EC4A31261BD0A38300785025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4A31041BD0A38300785025 /* Codepath Seinfeld Project */;
+			targetProxy = EC4A31251BD0A38300785025 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC4A310C1BD0A38300785025 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4A310D1BD0A38300785025 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4A31121BD0A38300785025 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC4A312B1BD0A38300785025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC4A312C1BD0A38300785025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC4A312E1BD0A38300785025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Codepath Seinfeld Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mh.Codepath-Seinfeld-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC4A312F1BD0A38300785025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Codepath Seinfeld Project/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mh.Codepath-Seinfeld-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC4A31311BD0A38300785025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Codepath Seinfeld ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mh.Codepath-Seinfeld-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codepath Seinfeld Project.app/Codepath Seinfeld Project";
+			};
+			name = Debug;
+		};
+		EC4A31321BD0A38300785025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Codepath Seinfeld ProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mh.Codepath-Seinfeld-ProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codepath Seinfeld Project.app/Codepath Seinfeld Project";
+			};
+			name = Release;
+		};
+		EC4A31341BD0A38300785025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Codepath Seinfeld ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mh.Codepath-Seinfeld-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Codepath Seinfeld Project";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EC4A31351BD0A38300785025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Codepath Seinfeld ProjectUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mh.Codepath-Seinfeld-ProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Codepath Seinfeld Project";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC4A31001BD0A38300785025 /* Build configuration list for PBXProject "Codepath Seinfeld Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A312B1BD0A38300785025 /* Debug */,
+				EC4A312C1BD0A38300785025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4A312D1BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A312E1BD0A38300785025 /* Debug */,
+				EC4A312F1BD0A38300785025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC4A31301BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A31311BD0A38300785025 /* Debug */,
+				EC4A31321BD0A38300785025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC4A31331BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld ProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4A31341BD0A38300785025 /* Debug */,
+				EC4A31351BD0A38300785025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC4A30FD1BD0A38300785025 /* Project object */;
+}

@@ -14,6 +14,9 @@
 		EC4A31131BD0A38300785025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */; };
 		EC4A311E1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A311D1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift */; };
 		EC4A31291BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31281BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift */; };
+		EC4A31371BD0A7A100785025 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31361BD0A7A100785025 /* Create.storyboard */; settings = {ASSET_TAGS = (); }; };
+		EC4A31391BD0A97400785025 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A313B1BD6E27500785025 /* HomeLauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		EC4A31241BD0A38300785025 /* Codepath Seinfeld ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Codepath Seinfeld ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4A31281BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codepath_Seinfeld_ProjectUITests.swift; sourceTree = "<group>"; };
 		EC4A312A1BD0A38300785025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4A31361BD0A7A100785025 /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateNewChallengeViewController.swift; path = "View Controllers/CreateNewChallengeViewController.swift"; sourceTree = "<group>"; };
+		EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeLauncherViewController.swift; path = "View Controllers/HomeLauncherViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				EC4A31081BD0A38300785025 /* AppDelegate.swift */,
 				EC4A310A1BD0A38300785025 /* ViewController.swift */,
 				EC4A310C1BD0A38300785025 /* Main.storyboard */,
+				EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */,
+				EC4A31361BD0A7A100785025 /* Create.storyboard */,
+				EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */,
 				EC4A310F1BD0A38300785025 /* Assets.xcassets */,
 				EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */,
 				EC4A31141BD0A38300785025 /* Info.plist */,
@@ -228,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4A31371BD0A7A100785025 /* Create.storyboard in Resources */,
 				EC4A31131BD0A38300785025 /* LaunchScreen.storyboard in Resources */,
 				EC4A31101BD0A38300785025 /* Assets.xcassets in Resources */,
 				EC4A310E1BD0A38300785025 /* Main.storyboard in Resources */,
@@ -256,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4A310B1BD0A38300785025 /* ViewController.swift in Sources */,
+				EC4A31391BD0A97400785025 /* CreateNewChallengeViewController.swift in Sources */,
+				EC4A313B1BD6E27500785025 /* HomeLauncherViewController.swift in Sources */,
 				EC4A31091BD0A38300785025 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

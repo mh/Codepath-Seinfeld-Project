@@ -9,11 +9,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomeLauncherViewController" id="BYZ-38-t0r" customClass="HomeLauncherViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vEo-NE-tWH">
-                                <rect key="frame" x="78" y="80" width="164" height="36"/>
+                                <rect key="frame" x="105" y="165" width="164" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -22,15 +22,123 @@
                                     <action selector="navigateToCreateScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nr7-H7-w8h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w4U-7k-0us">
+                                <rect key="frame" x="61" y="93" width="252" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sign Up Flow (Start here)"/>
+                                <connections>
+                                    <action selector="navigateToSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TC1-t6-KeH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="368"/>
+            <point key="canvasLocation" x="-182.5" y="207.5"/>
+        </scene>
+        <!--Challenge History View Controller-->
+        <scene sceneID="Z4f-86-6hn">
+            <objects>
+                <viewController storyboardIdentifier="ChallengeHistoryViewController" id="Kbc-fw-EeG" customClass="ChallengeHistoryViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pNQ-yL-Hma">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="history-view" id="rfK-SR-zaX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMk-u5-EFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.5" y="215.5"/>
+        </scene>
+        <!--Complete Challenge View Controller-->
+        <scene sceneID="Bn6-kf-F5x">
+            <objects>
+                <viewController storyboardIdentifier="CompleteChallengeViewController" id="eEX-C5-bbL" customClass="CompleteChallengeViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NYm-8g-FSM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="completion-modal" id="5XV-eF-cRl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7v-ko-uji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1330.5" y="215.5"/>
+        </scene>
+        <!--Share Challenge View Controller-->
+        <scene sceneID="oyn-a6-VfS">
+            <objects>
+                <viewController storyboardIdentifier="ShareChallengeViewController" id="UFV-HP-srF" customClass="ShareChallengeViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fVJ-nH-yX9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="finish-share" id="59s-Br-11l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGR-3B-aja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819.5" y="207.5"/>
+        </scene>
+        <!--Active Challenge View Controller-->
+        <scene sceneID="ips-6d-iRe">
+            <objects>
+                <viewController storyboardIdentifier="ActiveChallengeViewController" id="ysq-Wj-AB1" customClass="ActiveChallengeViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EvH-yk-9EL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="active" id="WIZ-dY-304">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30F-9k-XrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="207.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="active" width="375" height="667"/>
+        <image name="completion-modal" width="375" height="667"/>
+        <image name="finish-share" width="375" height="667"/>
+        <image name="history-view" width="375" height="667"/>
+    </resources>
 </document>

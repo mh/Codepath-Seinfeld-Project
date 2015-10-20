@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Create New Challenge View Controller-->
+        <!--View Controller-->
         <scene sceneID="EGB-fv-7rl">
             <objects>
-                <viewController storyboardIdentifier="CreateNewChallengeViewController" id="bS8-yN-1zQ" customClass="CreateNewChallengeViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bS8-yN-1zQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E0V-95-UTF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,13 +150,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="activityTableView" destination="86N-a3-cRj" id="Hyt-o7-pHJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuw-be-Zqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="413"/>
+            <point key="canvasLocation" x="-93" y="415"/>
+        </scene>
+        <!--Create New Challenge View Controller-->
+        <scene sceneID="Lxm-GH-fIG">
+            <objects>
+                <viewController storyboardIdentifier="CreateNewChallengeViewController" id="62m-0i-Pjr" customClass="CreateNewChallengeViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXU-j1-NcG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="onboard" id="2l6-8e-jme">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crJ-wW-zVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.5" y="435.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="onboard" width="375" height="667"/>
+    </resources>
 </document>

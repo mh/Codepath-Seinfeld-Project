@@ -24,13 +24,18 @@ class HomeLauncherViewController: UIViewController {
     
     @IBAction func navigateToCreateScreen(sender: AnyObject) {
         
-        var storyboard = UIStoryboard(name: "Create", bundle: nil)
-        var controller = storyboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as UIViewController
-        
-        self.presentViewController(controller, animated: true, completion: nil)
+        let createStoryboard = UIStoryboard(name: "Create", bundle: nil)
+        let createController = createStoryboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as UIViewController
+        self.presentViewController(createController, animated: true, completion: nil)
 
     }
     
+    @IBAction func navigateToSignUp(sender: AnyObject) {
+        let signinStoryboard = UIStoryboard(name: "Signin", bundle: nil)
+        let signinController = signinStoryboard.instantiateViewControllerWithIdentifier("SigninViewController") as UIViewController
+        self.presentViewController(signinController, animated: true, completion: nil)
+        
+    }
 
     /*
     // MARK: - Navigation

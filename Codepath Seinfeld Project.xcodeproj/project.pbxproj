@@ -17,6 +17,13 @@
 		EC4A31371BD0A7A100785025 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31361BD0A7A100785025 /* Create.storyboard */; settings = {ASSET_TAGS = (); }; };
 		EC4A31391BD0A97400785025 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EC4A313B1BD6E27500785025 /* HomeLauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A31441BD7025E00785025 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31431BD7025E00785025 /* SigninViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A31461BD7027E00785025 /* SigninConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31451BD7027E00785025 /* SigninConfirmViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A314A1BD7041900785025 /* ActiveChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31491BD7041900785025 /* ActiveChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A314C1BD7044200785025 /* ChallengeHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314B1BD7044200785025 /* ChallengeHistoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A314E1BD704E200785025 /* CompleteChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314D1BD704E200785025 /* CompleteChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A31501BD704FD00785025 /* ShareChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314F1BD704FD00785025 /* ShareChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EC4A31521BD705E100785025 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31511BD705E100785025 /* Signin.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		EC4A31361BD0A7A100785025 /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
 		EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateNewChallengeViewController.swift; path = "View Controllers/CreateNewChallengeViewController.swift"; sourceTree = "<group>"; };
 		EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeLauncherViewController.swift; path = "View Controllers/HomeLauncherViewController.swift"; sourceTree = "<group>"; };
+		EC4A31431BD7025E00785025 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SigninViewController.swift; path = "View Controllers/SigninViewController.swift"; sourceTree = "<group>"; };
+		EC4A31451BD7027E00785025 /* SigninConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SigninConfirmViewController.swift; path = "View Controllers/SigninConfirmViewController.swift"; sourceTree = "<group>"; };
+		EC4A31491BD7041900785025 /* ActiveChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveChallengeViewController.swift; path = "View Controllers/ActiveChallengeViewController.swift"; sourceTree = "<group>"; };
+		EC4A314B1BD7044200785025 /* ChallengeHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeHistoryViewController.swift; sourceTree = "<group>"; };
+		EC4A314D1BD704E200785025 /* CompleteChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompleteChallengeViewController.swift; path = "View Controllers/CompleteChallengeViewController.swift"; sourceTree = "<group>"; };
+		EC4A314F1BD704FD00785025 /* ShareChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareChallengeViewController.swift; path = "View Controllers/ShareChallengeViewController.swift"; sourceTree = "<group>"; };
+		EC4A31511BD705E100785025 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +117,11 @@
 		EC4A31071BD0A38300785025 /* Codepath Seinfeld Project */ = {
 			isa = PBXGroup;
 			children = (
+				EC4A31411BD7011600785025 /* Signin */,
+				EC4A31401BD7010500785025 /* Create */,
 				EC4A31081BD0A38300785025 /* AppDelegate.swift */,
 				EC4A310A1BD0A38300785025 /* ViewController.swift */,
-				EC4A310C1BD0A38300785025 /* Main.storyboard */,
-				EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */,
-				EC4A31361BD0A7A100785025 /* Create.storyboard */,
-				EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */,
+				EC4A31421BD7012900785025 /* Home / Main */,
 				EC4A310F1BD0A38300785025 /* Assets.xcassets */,
 				EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */,
 				EC4A31141BD0A38300785025 /* Info.plist */,
@@ -132,6 +145,54 @@
 				EC4A312A1BD0A38300785025 /* Info.plist */,
 			);
 			path = "Codepath Seinfeld ProjectUITests";
+			sourceTree = "<group>";
+		};
+		EC4A31401BD7010500785025 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31361BD0A7A100785025 /* Create.storyboard */,
+				EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */,
+			);
+			name = Create;
+			sourceTree = "<group>";
+		};
+		EC4A31411BD7011600785025 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31511BD705E100785025 /* Signin.storyboard */,
+				EC4A31471BD7031800785025 /* view controllers */,
+			);
+			name = Signin;
+			sourceTree = "<group>";
+		};
+		EC4A31421BD7012900785025 /* Home / Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31481BD703FD00785025 /* view controllers */,
+				EC4A310C1BD0A38300785025 /* Main.storyboard */,
+			);
+			name = "Home / Main";
+			sourceTree = "<group>";
+		};
+		EC4A31471BD7031800785025 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A31451BD7027E00785025 /* SigninConfirmViewController.swift */,
+				EC4A31431BD7025E00785025 /* SigninViewController.swift */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		EC4A31481BD703FD00785025 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */,
+				EC4A31491BD7041900785025 /* ActiveChallengeViewController.swift */,
+				EC4A314B1BD7044200785025 /* ChallengeHistoryViewController.swift */,
+				EC4A314D1BD704E200785025 /* CompleteChallengeViewController.swift */,
+				EC4A314F1BD704FD00785025 /* ShareChallengeViewController.swift */,
+			);
+			name = "view controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4A31521BD705E100785025 /* Signin.storyboard in Resources */,
 				EC4A31371BD0A7A100785025 /* Create.storyboard in Resources */,
 				EC4A31131BD0A38300785025 /* LaunchScreen.storyboard in Resources */,
 				EC4A31101BD0A38300785025 /* Assets.xcassets in Resources */,
@@ -266,9 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4A310B1BD0A38300785025 /* ViewController.swift in Sources */,
+				EC4A314A1BD7041900785025 /* ActiveChallengeViewController.swift in Sources */,
+				EC4A31441BD7025E00785025 /* SigninViewController.swift in Sources */,
+				EC4A314C1BD7044200785025 /* ChallengeHistoryViewController.swift in Sources */,
 				EC4A31391BD0A97400785025 /* CreateNewChallengeViewController.swift in Sources */,
 				EC4A313B1BD6E27500785025 /* HomeLauncherViewController.swift in Sources */,
+				EC4A31501BD704FD00785025 /* ShareChallengeViewController.swift in Sources */,
 				EC4A31091BD0A38300785025 /* AppDelegate.swift in Sources */,
+				EC4A314E1BD704E200785025 /* CompleteChallengeViewController.swift in Sources */,
+				EC4A31461BD7027E00785025 /* SigninConfirmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +561,7 @@
 				EC4A312F1BD0A38300785025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC4A31301BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +570,7 @@
 				EC4A31321BD0A38300785025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC4A31331BD0A38300785025 /* Build configuration list for PBXNativeTarget "Codepath Seinfeld ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +579,7 @@
 				EC4A31351BD0A38300785025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

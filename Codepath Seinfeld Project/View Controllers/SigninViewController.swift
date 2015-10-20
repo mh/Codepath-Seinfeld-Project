@@ -1,20 +1,17 @@
 //
-//  CreateNewChallengeViewController.swift
+//  SigninViewController.swift
 //  Codepath Seinfeld Project
 //
-//  Created by matt hunter on 10/15/15.
+//  Created by matt hunter on 10/20/15.
 //  Copyright © 2015 matt hunter. All rights reserved.
 //
 
 import UIKit
 
-class CreateNewChallengeViewController: UIViewController {
+class SigninViewController: UIViewController {
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // activityTableView.
 
         // Do any additional setup after loading the view.
     }

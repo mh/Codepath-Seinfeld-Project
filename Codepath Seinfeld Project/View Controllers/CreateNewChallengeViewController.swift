@@ -24,6 +24,12 @@ class CreateNewChallengeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func navigateToHome(sender: AnyObject) {
+        let createStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let createController = createStoryboard.instantiateViewControllerWithIdentifier("ActiveChallengeViewController") as UIViewController
+        self.presentViewController(createController, animated: true, completion: nil)
+        
+    }
 
     /*
     // MARK: - Navigation

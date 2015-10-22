@@ -21,16 +21,20 @@
                                 <rect key="frame" x="35" y="331" width="305" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
+                                <connections>
+                                    <segue destination="UkL-gk-15v" kind="modal" id="eix-y4-ece"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hiY-vf-w8j"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHu-gE-Jis" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="227.5" y="172.5"/>
+            <point key="canvasLocation" x="759.5" y="172.5"/>
         </scene>
         <!--Signin Confirm View Controller-->
         <scene sceneID="FhH-Vi-ZKH">
@@ -45,16 +49,24 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TRf-vA-7NV">
+                                <rect key="frame" x="5" y="598" width="370" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="navigateToHomeScreen:" destination="UkL-gk-15v" eventType="touchUpInside" id="9KV-6C-NEX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Brt-Oa-BeV"/>
+                    <navigationItem key="navigationItem" id="Z0o-eL-cwj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6te-iy-pbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761.5" y="172.5"/>
+            <point key="canvasLocation" x="1332.5" y="122.5"/>
         </scene>
     </scenes>
     <resources>

@@ -22,6 +22,14 @@ class SigninConfirmViewController: UIViewController {
     }
     
 
+    @IBAction func navigateToHomeScreen(sender: AnyObject) {
+        
+        let createStoryboard = UIStoryboard(name: "Create", bundle: nil)
+        let createController = createStoryboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as UIViewController
+        self.presentViewController(createController, animated: true, completion: nil)
+        
+    }
+
     /*
     // MARK: - Navigation
 

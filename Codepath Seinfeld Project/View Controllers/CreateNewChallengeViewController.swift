@@ -11,9 +11,11 @@ import UIKit
 class CreateNewChallengeViewController: UIViewController {
 
 
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
         // activityTableView.
 
         // Do any additional setup after loading the view.

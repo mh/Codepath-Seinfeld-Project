@@ -121,7 +121,7 @@
 				EC4A31401BD7010500785025 /* Create */,
 				EC4A31081BD0A38300785025 /* AppDelegate.swift */,
 				EC4A310A1BD0A38300785025 /* ViewController.swift */,
-				EC4A31421BD7012900785025 /* Home / Main */,
+				EC4A31421BD7012900785025 /* History (main) */,
 				EC4A310F1BD0A38300785025 /* Assets.xcassets */,
 				EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */,
 				EC4A31141BD0A38300785025 /* Info.plist */,
@@ -165,13 +165,13 @@
 			name = Signin;
 			sourceTree = "<group>";
 		};
-		EC4A31421BD7012900785025 /* Home / Main */ = {
+		EC4A31421BD7012900785025 /* History (main) */ = {
 			isa = PBXGroup;
 			children = (
 				EC4A31481BD703FD00785025 /* view controllers */,
 				EC4A310C1BD0A38300785025 /* Main.storyboard */,
 			);
-			name = "Home / Main";
+			name = "History (main)";
 			sourceTree = "<group>";
 		};
 		EC4A31471BD7031800785025 /* view controllers */ = {

@@ -50,11 +50,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="history-view" id="rfK-SR-zaX">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="x-bg" id="cWc-FW-Voe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Card" id="lde-mJ-7Hv">
+                                <rect key="frame" x="67" y="174" width="240" height="320"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Card New" id="yJ6-58-uF9">
+                                <rect key="frame" x="340" y="173" width="240" height="320"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Card" id="pu8-pd-GJD">
+                                <rect key="frame" x="-202" y="174" width="240" height="320"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xe2-u2-qM1">
+                                <rect key="frame" x="152" y="524" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.44705882352941179" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -136,9 +159,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Card" width="240" height="320"/>
+        <image name="Card New" width="240" height="320"/>
         <image name="active" width="375" height="667"/>
         <image name="completion-modal" width="375" height="667"/>
         <image name="finish-share" width="375" height="667"/>
-        <image name="history-view" width="375" height="667"/>
+        <image name="x-bg" width="375" height="667"/>
     </resources>
 </document>

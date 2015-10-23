@@ -24,7 +24,7 @@ class HomeLauncherViewController: UIViewController {
     
     @IBAction func navigateToCreateScreen(sender: AnyObject) {
         
-        let createStoryboard = UIStoryboard(name: "Create", bundle: nil)
+        let createStoryboard = UIStoryboard(name: "Signin", bundle: nil)
         let createController = createStoryboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as UIViewController
         self.presentViewController(createController, animated: true, completion: nil)
 

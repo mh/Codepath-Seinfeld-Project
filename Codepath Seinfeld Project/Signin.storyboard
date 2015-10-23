@@ -140,10 +140,57 @@
             </objects>
             <point key="canvasLocation" x="1332.5" y="122.5"/>
         </scene>
+        <!--Create New Challenge View Controller-->
+        <scene sceneID="83c-V6-AMz">
+            <objects>
+                <viewController storyboardIdentifier="CreateNewChallengeViewController" id="Qyh-ZF-VSM" customClass="CreateNewChallengeViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCM-KS-Gta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="TC7-EH-NPP">
+                                <rect key="frame" x="119" y="86" width="244" height="581"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Action List" id="dMe-Q3-nTt">
+                                        <rect key="frame" x="9" y="8" width="225" height="619"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MtA-6T-VZ3">
+                                <rect key="frame" x="0.0" y="605" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" backgroundImage="START BUTTON"/>
+                                <connections>
+                                    <action selector="navigateToHome:" destination="Qyh-ZF-VSM" eventType="touchUpInside" id="qUp-ze-CmU"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="For next 30 days I want to" id="5CZ-YC-H09">
+                                <rect key="frame" x="25" y="68" width="325" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.10980392160000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSU-xd-BM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883.5" y="122.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AaronT" width="144" height="142"/>
+        <image name="Action List" width="225" height="619"/>
+        <image name="For next 30 days I want to" width="325" height="55"/>
         <image name="Login with Faceboko Button" width="304" height="52"/>
+        <image name="START BUTTON" width="375" height="64"/>
         <image name="Yep Button" width="375" height="64"/>
         <image name="x-logo" width="55" height="81"/>
     </resources>

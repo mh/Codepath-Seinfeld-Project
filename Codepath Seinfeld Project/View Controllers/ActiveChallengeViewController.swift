@@ -8,21 +8,56 @@
 
 import UIKit
 
-class ActiveChallengeViewController: UIViewController {
+let reuseIdentifier = "collCell"
 
+class ActiveChallengeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
+    // Define the dictionary
+    var days: [String] = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6"] // [NSDictionary]!
+
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var bottomSection: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
         
+        // Set background colors
+        self.view.backgroundColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
         bottomSection.backgroundColor = UIColor(red: 175/255, green: 62/255, blue: 121/255, alpha: 1)
+        collectionView.backgroundColor = UIColor(red: 175/255, green: 62/255, blue: 121/255, alpha: 1)
+
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        self.collectionView.reloadData()
 
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        //#warning Incomplete method implementation -- Return the number of sections
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        //#warning Incomplete method implementation -- Return the number of items in the section
+        return days.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
+        
+        cell.dayCardTitle.text = self.days[indexPath.row]
+      //  let curr = indexPath.row % 5  + 1
+      //  let imgName = "pin\(curr).jpg"
+       // cell.dayCardImage.image = UIImage(named: imgName)
+        
+        return cell
     }
     
 

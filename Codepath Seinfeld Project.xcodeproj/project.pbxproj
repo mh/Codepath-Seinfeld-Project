@@ -14,16 +14,18 @@
 		EC4A31131BD0A38300785025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31111BD0A38300785025 /* LaunchScreen.storyboard */; };
 		EC4A311E1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A311D1BD0A38300785025 /* Codepath_Seinfeld_ProjectTests.swift */; };
 		EC4A31291BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31281BD0A38300785025 /* Codepath_Seinfeld_ProjectUITests.swift */; };
-		EC4A31391BD0A97400785025 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A313B1BD6E27500785025 /* HomeLauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A31441BD7025E00785025 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31431BD7025E00785025 /* SigninViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A31461BD7027E00785025 /* SigninConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31451BD7027E00785025 /* SigninConfirmViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A314A1BD7041900785025 /* ActiveChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31491BD7041900785025 /* ActiveChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A314C1BD7044200785025 /* ChallengeHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314B1BD7044200785025 /* ChallengeHistoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A314E1BD704E200785025 /* CompleteChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314D1BD704E200785025 /* CompleteChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A31501BD704FD00785025 /* ShareChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314F1BD704FD00785025 /* ShareChallengeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		EC4A31521BD705E100785025 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31511BD705E100785025 /* Signin.storyboard */; settings = {ASSET_TAGS = (); }; };
-		EC8A57EA1BD9DA7E002C789A /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8A57E91BD9DA7E002C789A /* Capture.storyboard */; settings = {ASSET_TAGS = (); }; };
+		EC4A31391BD0A97400785025 /* CreateNewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31381BD0A97400785025 /* CreateNewChallengeViewController.swift */; };
+		EC4A313B1BD6E27500785025 /* HomeLauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A313A1BD6E27500785025 /* HomeLauncherViewController.swift */; };
+		EC4A31441BD7025E00785025 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31431BD7025E00785025 /* SigninViewController.swift */; };
+		EC4A31461BD7027E00785025 /* SigninConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31451BD7027E00785025 /* SigninConfirmViewController.swift */; };
+		EC4A314A1BD7041900785025 /* ActiveChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A31491BD7041900785025 /* ActiveChallengeViewController.swift */; };
+		EC4A314C1BD7044200785025 /* ChallengeHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314B1BD7044200785025 /* ChallengeHistoryViewController.swift */; };
+		EC4A314E1BD704E200785025 /* CompleteChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314D1BD704E200785025 /* CompleteChallengeViewController.swift */; };
+		EC4A31501BD704FD00785025 /* ShareChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A314F1BD704FD00785025 /* ShareChallengeViewController.swift */; };
+		EC4A31521BD705E100785025 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A31511BD705E100785025 /* Signin.storyboard */; };
+		EC8A57EA1BD9DA7E002C789A /* Capture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8A57E91BD9DA7E002C789A /* Capture.storyboard */; };
+		ECC2ED3B1BDFF47B00F14751 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2ED3A1BDFF47B00F14751 /* CollectionViewCell.swift */; };
+		ECC2ED3D1BE035B400F14751 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2ED3C1BE035B400F14751 /* KDCircularProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		EC4A314F1BD704FD00785025 /* ShareChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareChallengeViewController.swift; path = "View Controllers/ShareChallengeViewController.swift"; sourceTree = "<group>"; };
 		EC4A31511BD705E100785025 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		EC8A57E91BD9DA7E002C789A /* Capture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Capture.storyboard; sourceTree = "<group>"; };
+		ECC2ED3A1BDFF47B00F14751 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		ECC2ED3C1BE035B400F14751 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		EC4A31071BD0A38300785025 /* Codepath Seinfeld Project */ = {
 			isa = PBXGroup;
 			children = (
+				ECC2ED3C1BE035B400F14751 /* KDCircularProgress.swift */,
 				EC4A31411BD7011600785025 /* Signin */,
 				EC4A31081BD0A38300785025 /* AppDelegate.swift */,
 				EC4A310A1BD0A38300785025 /* ViewController.swift */,
@@ -161,6 +166,7 @@
 			children = (
 				EC4A31481BD703FD00785025 /* view controllers */,
 				EC4A310C1BD0A38300785025 /* Main.storyboard */,
+				ECC2ED3A1BDFF47B00F14751 /* CollectionViewCell.swift */,
 			);
 			name = "History (main)";
 			sourceTree = "<group>";
@@ -335,8 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC2ED3D1BE035B400F14751 /* KDCircularProgress.swift in Sources */,
 				EC4A310B1BD0A38300785025 /* ViewController.swift in Sources */,
 				EC4A314A1BD7041900785025 /* ActiveChallengeViewController.swift in Sources */,
+				ECC2ED3B1BDFF47B00F14751 /* CollectionViewCell.swift in Sources */,
 				EC4A31441BD7025E00785025 /* SigninViewController.swift in Sources */,
 				EC4A314C1BD7044200785025 /* ChallengeHistoryViewController.swift in Sources */,
 				EC4A31391BD0A97400785025 /* CreateNewChallengeViewController.swift in Sources */,

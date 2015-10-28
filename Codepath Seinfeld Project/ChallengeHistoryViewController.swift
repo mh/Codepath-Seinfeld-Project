@@ -13,7 +13,7 @@ class ChallengeHistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(red: 175/255, green: 62/255, blue: 121/255, alpha: 1)
+        self.view.backgroundColor = UIColor(red: 175/255, green: 62/255, blue: 121/255, alpha: 0.3)
 
         // Do any additional setup after loading the view.
     }

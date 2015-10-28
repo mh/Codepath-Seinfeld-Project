@@ -17,6 +17,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var bottomSection: UIView!
+    @IBOutlet weak var circularProgressView: KDCircularProgress!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,10 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         self.collectionView.reloadData()
 
         // Do any additional setup after loading the view.
+
+        circularProgressView.trackColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
+        circularProgressView.angle = 0
+        circularProgressView.animateToAngle(144, duration: 1, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

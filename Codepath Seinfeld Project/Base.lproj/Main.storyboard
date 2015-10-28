@@ -239,6 +239,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bottomSection" destination="wTP-R8-AEP" id="cJo-Ro-645"/>
+                        <outlet property="circularProgressView" destination="H24-OS-hfh" id="lkT-hM-DzU"/>
                         <outlet property="collectionView" destination="04Z-o1-7m6" id="8aC-eY-CIb"/>
                     </connections>
                 </viewController>

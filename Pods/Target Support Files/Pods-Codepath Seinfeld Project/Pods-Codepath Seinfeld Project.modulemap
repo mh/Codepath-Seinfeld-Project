@@ -1,0 +1,6 @@
+framework module Pods_Codepath_Seinfeld_Project {
+  umbrella header "Pods-Codepath Seinfeld Project-umbrella.h"
+
+  export *
+  module * { export * }
+}

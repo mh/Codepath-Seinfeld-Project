@@ -7,11 +7,30 @@
 //
 
 import UIKit
+import Parse
+import ParseFacebookUtilsV4
+import AFNetworking
 
 class SigninConfirmViewController: UIViewController {
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let pictureRequest = FBSDKGraphRequest(graphPath: "me/picture?type=large&redirect=false", parameters: nil)
+        pictureRequest.startWithCompletionHandler({
+            (connection, result, error: NSError!) -> Void in
+            if error == nil {
+                print("\(result)")
+                let urlString = result.valueForKeyPath("data.url") as! String
+                let url = NSURL(string: urlString)!
+                self.profileImageView.setImageWithURL(url)
+            } else {
+                print("\(error)")
+            }
+        })
 
         // Do any additional setup after loading the view.
     }

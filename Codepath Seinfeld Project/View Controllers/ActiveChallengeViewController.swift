@@ -19,6 +19,9 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     @IBOutlet weak var bottomSection: UIView!
     @IBOutlet weak var circularProgressView: KDCircularProgress!
     
+    
+    @IBOutlet weak var settingsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,6 +67,16 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         
         return cell
     }
+    
+    @IBAction func onSettingsTap(sender: UIButton) {
+        
+        var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
+        var vc = storyboard.instantiateViewControllerWithIdentifier("SigninViewController") as! SigninViewController
+        self.showViewController(vc, sender: self)
+        
+//        presentViewController(SigninViewController, animated: true, completion: nil)
+    }
+    
     
 
     /*

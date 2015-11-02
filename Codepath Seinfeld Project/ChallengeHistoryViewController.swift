@@ -10,11 +10,17 @@ import UIKit
 
 class ChallengeHistoryViewController: UIViewController {
 
+    var currImage: UIImage?
+    var dayCardTitle: String?
+
+    @IBOutlet weak var dayText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(red: 175/255, green: 62/255, blue: 121/255, alpha: 0.3)
-
+        
+        dayText.text = dayCardTitle
         // Do any additional setup after loading the view.
     }
 
@@ -24,6 +30,9 @@ class ChallengeHistoryViewController: UIViewController {
     }
     
 
+    @IBAction func dissmissAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
+    }
     /*
     // MARK: - Navigation
 

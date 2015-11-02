@@ -266,7 +266,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30F-9k-XrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< Updated upstream
+            <point key="canvasLocation" x="836.5" y="215.5"/>
+=======
             <point key="canvasLocation" x="882.5" y="215.5"/>
+>>>>>>> Stashed changes
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q2M-fm-Gnf">

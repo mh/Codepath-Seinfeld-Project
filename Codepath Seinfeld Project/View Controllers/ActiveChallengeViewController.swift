@@ -68,6 +68,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         return cell
     }
     
+<<<<<<< Updated upstream
     @IBAction func onSettingsTap(sender: UIButton) {
         
         var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
@@ -77,6 +78,25 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
 //        presentViewController(SigninViewController, animated: true, completion: nil)
     }
     
+=======
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print("Segue ID: \(segue.identifier)")
+        print("Sender: \(sender)")
+        if(segue.identifier == "detail"){
+            let cell = sender as! CollectionViewCell
+            let indexPath = collectionView?.indexPathForCell(cell)
+            let vc = segue.destinationViewController as! ChallengeHistoryViewController
+            
+            print (cell.dayCardTitle.text)
+            print("View Controller: \(vc)")
+            
+            // send the data to the next view controller
+            vc.dayCardTitle = self.days[indexPath!.row]
+
+        }
+    }
+
+>>>>>>> Stashed changes
     
 
     /*

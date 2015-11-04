@@ -32,7 +32,7 @@ class HomeLauncherViewController: UIViewController {
     
     @IBAction func navigateToSignUp(sender: AnyObject) {
         let signinStoryboard = UIStoryboard(name: "Signin", bundle: nil)
-        let signinController = signinStoryboard.instantiateViewControllerWithIdentifier("SigninViewController") as UIViewController
+        let signinController = signinStoryboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as UIViewController
         self.presentViewController(signinController, animated: true, completion: nil)
         
     }

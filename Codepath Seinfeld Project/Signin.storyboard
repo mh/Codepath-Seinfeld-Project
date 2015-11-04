@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="The Northern Block - Regan-Medium.otf">
+            <string>Regan-Medium</string>
+            <string>Regan-Medium</string>
+            <string>Regan-Medium</string>
+            <string>Regan-Medium</string>
+            <string>Regan-Medium</string>
+            <string>Regan-Medium</string>
+            <string>Regan-Medium</string>
+            <string>Regan-Medium</string>
+        </mutableArray>
+        <mutableArray key="The Northern Block - Regan-Regular.otf">
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Signin View Controller-->
         <scene sceneID="ZPy-dN-Y2j">
@@ -86,7 +109,7 @@
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.33725491166114807" green="0.17647059261798859" blue="0.49019607901573181" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="hiY-vf-w8j"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -109,69 +132,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TRf-vA-7NV">
-                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="Yep Button"/>
-                                <connections>
-                                    <action selector="navigateToHomeScreen:" destination="UkL-gk-15v" eventType="touchUpInside" id="9KV-6C-NEX"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this info correct?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oyN-um-wti">
-                                <rect key="frame" x="74" y="67" width="226" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="AaronT" id="EcB-SE-Uc2">
-                                <rect key="frame" x="115" y="167" width="144" height="142"/>
+                                <rect key="frame" x="115" y="60" width="144" height="142"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Aaron Robbs" placeholder="Name" textAlignment="natural" minimumFontSize="17" id="TEI-zg-dnd">
-                                <rect key="frame" x="40" y="374" width="304" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Al-zc-Ag3">
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <view contentMode="scaleToFill" id="Imz-UG-9yX">
-                                <rect key="frame" x="41" y="412" width="304" height="3"/>
+                                <color key="backgroundColor" red="0.27450981736183167" green="0.62352943420410156" blue="0.64705884456634521" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Regan-Medium" family="Regan" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" id="ktT-QR-qzi">
+                                <rect key="frame" x="27" y="237" width="320" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="LIH-Lw-wAi">
+                                        <rect key="frame" x="20" y="20" width="280" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Lastname" textAlignment="natural" minimumFontSize="16" id="zGR-Rx-MR4">
+                                                <rect key="frame" x="24" y="0.0" width="230" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="textColor" red="0.33725491169999999" green="0.1764705926" blue="0.49019607900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="go"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" id="VqH-jx-g4l">
+                                                <rect key="frame" x="20" y="35" width="240" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="YHh-ac-pgs">
+                                        <rect key="frame" x="20" y="80" width="280" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mon DD, YYYY" textAlignment="natural" minimumFontSize="16" id="RuI-NN-m3i">
+                                                <rect key="frame" x="24" y="0.0" width="230" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="textColor" red="0.33725491169999999" green="0.1764705926" blue="0.49019607900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="go"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" id="WQG-LH-d3H">
+                                                <rect key="frame" x="20" y="35" width="240" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" id="Qdb-uQ-Bln">
-                                <rect key="frame" x="40" y="462" width="304" height="3"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="July 5, 1991" placeholder="Name" textAlignment="natural" minimumFontSize="17" id="Ix2-EN-C26">
-                                <rect key="frame" x="40" y="424" width="304" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z0o-eL-cwj"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="profileImageView" destination="EcB-SE-Uc2" id="2FU-c2-rSp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6te-iy-pbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332.5" y="122.5"/>
+            <point key="canvasLocation" x="1239.5" y="172.5"/>
         </scene>
         <!--Create New Challenge View Controller-->
         <scene sceneID="83c-V6-AMz">
@@ -181,50 +220,241 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="TC7-EH-NPP">
-                                <rect key="frame" x="119" y="86" width="244" height="581"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Action List" id="dMe-Q3-nTt">
-                                        <rect key="frame" x="9" y="8" width="225" height="619"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
-                                    </imageView>
-                                </subviews>
-                                <animations/>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MtA-6T-VZ3">
-                                <rect key="frame" x="0.0" y="605" width="375" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" backgroundImage="START BUTTON"/>
-                                <connections>
-                                    <action selector="navigateToHome:" destination="Qyh-ZF-VSM" eventType="touchUpInside" id="qUp-ze-CmU"/>
-                                </connections>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="For next 30 days I want to" id="5CZ-YC-H09">
-                                <rect key="frame" x="25" y="68" width="325" height="55"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Asset-SetGoal_demogoals" id="sFw-Zp-LiO">
+                                <rect key="frame" x="-10" y="200" width="375" height="720"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Asset-SetGoal_gradient" id="sTt-dg-Fq3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For the next 30 Days," lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Acb-ro-PxS">
+                                <rect key="frame" x="14" y="56" width="229" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hum-ih-KUJ">
+                                <rect key="frame" x="14" y="90" width="229" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="16" id="YhR-81-tU4">
+                                <rect key="frame" x="114" y="90" width="230" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="textColor" red="0.98431372549019602" green="0.53725490196078429" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="go"/>
+                            </textField>
+                            <view contentMode="scaleToFill" id="nJw-wN-vJl">
+                                <rect key="frame" x="110" y="125" width="240" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WD1-Fs-ggy">
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.53725490200000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Regan-Medium" family="Regan" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.26274509800000001" green="0.10980392160000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.1764705882" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="EcB-SE-Uc2" id="2FU-c2-rSp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSU-xd-BM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1883.5" y="122.5"/>
+            <point key="canvasLocation" x="759.5" y="-773.5"/>
+        </scene>
+        <!--Notification Settings View Controller-->
+        <scene sceneID="XH0-2y-nSi">
+            <objects>
+                <viewController storyboardIdentifier="NotificationSettingsViewController" id="wws-JL-dWp" customClass="NotificationSettingsViewController" customModule="Codepath_Seinfeld_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rIn-NU-BEH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="cZL-jp-DjF">
+                                <rect key="frame" x="0.0" y="16" width="375" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do something" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZwU-0C-I5m">
+                                        <rect key="frame" x="73" y="40" width="229" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 DAYS OF" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NYF-jQ-MsE">
+                                        <rect key="frame" x="73" y="20" width="229" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Regan-Medium" family="Regan" pointSize="14"/>
+                                        <color key="textColor" red="0.5725490196078431" green="0.47450980392156861" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="Z0j-bt-6Mf">
+                                        <rect key="frame" x="67" y="128" width="240" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.33725491166114807" green="0.17647059261798859" blue="0.49019607901573181" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="xVm-lE-L6j">
+                                <rect key="frame" x="0.0" y="200" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REMIND ME" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Og-IN-ge1">
+                                        <rect key="frame" x="73" y="0.0" width="229" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Regan-Medium" family="Regan" pointSize="14"/>
+                                        <color key="textColor" red="0.57254901960000004" green="0.47450980390000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="Hfg-Yw-mZt">
+                                        <rect key="frame" x="28" y="40" width="326" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="vLp-fT-qxk">
+                                                <rect key="frame" x="257" y="4" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning Reminder" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NK8-jF-wyD">
+                                                <rect key="frame" x="20" y="0.0" width="229" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="2oj-bW-GYS">
+                                        <rect key="frame" x="28" y="108" width="326" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="vOG-eK-FV5">
+                                                <rect key="frame" x="257" y="4" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evening Reminder" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yI4-rt-crD">
+                                                <rect key="frame" x="20" y="0.0" width="229" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="xdX-Dl-O0c">
+                                        <rect key="frame" x="67" y="196" width="240" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.33725491169999999" green="0.1764705926" blue="0.49019607900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Oxv-qp-L6G">
+                                <rect key="frame" x="0.0" y="456" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BADGE ME" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nbS-KK-WoU">
+                                        <rect key="frame" x="73" y="0.0" width="229" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Regan-Medium" family="Regan" pointSize="14"/>
+                                        <color key="textColor" red="0.57254901960000004" green="0.47450980390000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="JnN-5p-JsN">
+                                        <rect key="frame" x="28" y="40" width="326" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="7jW-EW-dgp">
+                                                <rect key="frame" x="257" y="4" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Icon Badging" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xm1-ue-GrN">
+                                                <rect key="frame" x="20" y="0.0" width="229" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PPB-ZH-Lrf">
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.33725491169999999" green="0.1764705926" blue="0.49019607900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Regan-Medium" family="Regan" pointSize="18"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.25882354378700256" green="0.12549020349979401" blue="0.39215686917304993" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJ7-Hy-Vjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246.5" y="-773.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="AaronT" width="144" height="142"/>
-        <image name="Action List" width="225" height="619"/>
-        <image name="For next 30 days I want to" width="325" height="55"/>
-        <image name="Login with Faceboko Button" width="304" height="52"/>
-        <image name="START BUTTON" width="375" height="64"/>
-        <image name="Yep Button" width="375" height="64"/>
-        <image name="x-logo" width="55" height="81"/>
+        <image name="Asset-SetGoal_demogoals" width="375" height="720"/>
+        <image name="Asset-SetGoal_gradient" width="375" height="350"/>
     </resources>
 </document>

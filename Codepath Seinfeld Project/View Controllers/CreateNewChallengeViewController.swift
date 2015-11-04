@@ -10,17 +10,30 @@ import UIKit
 
 class CreateNewChallengeViewController: UIViewController {
 
+    @IBOutlet weak var challengeInput: UITextField!
 
+    @IBOutlet weak var demoGoalsImageView: UIImageView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
-        self.view.backgroundColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
-        // activityTableView.
-
-        // Do any additional setup after loading the view.
+        let demoOriginalPosition = demoGoalsImageView.center
+        
+        delay(0.7) { () -> () in
+            self.challengeInput.becomeFirstResponder()
+        }
+        
+        UIView.animateWithDuration(55.0, delay: 0, options: [], animations: { () -> Void in
+            let newCenter = CGPoint(x: demoOriginalPosition.x, y: demoOriginalPosition.y - (self.demoGoalsImageView.frame.size.height + 200))
+            
+            self.demoGoalsImageView.center = newCenter
+            }) { (Bool) -> Void in
+                //COMPLETTION
+        }
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -36,5 +36,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>The Northern Block - Regan-Light.otf</string>
+		<string>The Northern Block - Regan-Medium.otf</string>
+		<string>The Northern Block - Regan-Regular.otf</string>
+	</array>
 </dict>
 </plist>

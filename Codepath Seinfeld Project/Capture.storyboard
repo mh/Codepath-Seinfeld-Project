@@ -66,7 +66,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="F630BCF0-B9CB-43BE-B94E-640CA688BC8D" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-Ce-kal">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="D9602B9F-B0E5-439A-ACF1-8AE458F4BB16" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-Ce-kal">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
@@ -87,7 +87,7 @@
     </scenes>
     <resources>
         <image name="Back Button " width="20" height="37"/>
-        <image name="F630BCF0-B9CB-43BE-B94E-640CA688BC8D" width="375" height="667">
+        <image name="D9602B9F-B0E5-439A-ACF1-8AE458F4BB16" width="375" height="667">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

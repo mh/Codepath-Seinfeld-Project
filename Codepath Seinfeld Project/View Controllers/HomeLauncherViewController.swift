@@ -36,6 +36,8 @@ class HomeLauncherViewController: UIViewController {
         self.presentViewController(signinController, animated: true, completion: nil)
         
     }
+    
+    
 
     /*
     // MARK: - Navigation

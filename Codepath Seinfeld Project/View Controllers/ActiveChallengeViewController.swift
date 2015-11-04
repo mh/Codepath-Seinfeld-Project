@@ -68,7 +68,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         return cell
     }
     
-<<<<<<< Updated upstream
+
     @IBAction func onSettingsTap(sender: UIButton) {
         
         var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
@@ -78,7 +78,6 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
 //        presentViewController(SigninViewController, animated: true, completion: nil)
     }
     
-=======
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         print("Segue ID: \(segue.identifier)")
         print("Sender: \(sender)")
@@ -96,7 +95,6 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         }
     }
 
->>>>>>> Stashed changes
     
 
     /*

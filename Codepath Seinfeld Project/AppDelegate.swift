@@ -17,12 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, forLocalNotification notification: UILocalNotification, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Override point for customization after application launch.
         Parse.setApplicationId("rdfnEXMeEetrlOtqSv6HvgEW6WWVOJ2xdxwHCqIt", clientKey: "eFaWADfY8XYdgYx4TFNXvHiCI5bB7HnzRlhPE9gb")
         
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+        
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
         return true
     }

@@ -9,9 +9,13 @@
 import UIKit
 
 class NotificationSettingsViewController: UIViewController {
+    
+    @IBOutlet weak var morningReminderSwitch: UISwitch!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -20,6 +24,27 @@ class NotificationSettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func onMorningReminderSwitch(sender: UIButton) {
+        if morningReminderSwitch.on {
+            let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+            UIApplication.sharedApplication().registerForRemoteNotifications()
+            print("switch on")
+            
+            
+            var localNotification:UILocalNotification = UILocalNotification()
+            localNotification.alertAction = "30"
+            localNotification.alertBody = "Reminder: Call Mom"
+            localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
+            localNotification.soundName = UILocalNotificationDefaultSoundName
+            localNotification.category = "invite"
+            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        } else {
+            print("switch off")
+        }
+    }
+    
     
 
     /*

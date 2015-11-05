@@ -47,6 +47,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         circularProgressView.trackColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
         circularProgressView.angle = 0
         circularProgressView.animateToAngle(144, duration: 1, completion: nil)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,15 +77,23 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         return cell
     }
     
-
     @IBAction func onSettingsTap(sender: UIButton) {
         
         var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
         var vc = storyboard.instantiateViewControllerWithIdentifier("SigninViewController") as! SigninViewController
         self.showViewController(vc, sender: self)
         
-//        presentViewController(SigninViewController, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func onHabitSettingsTap(sender: AnyObject) {
+        var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
+        var vc = storyboard.instantiateViewControllerWithIdentifier("NotificationSettingsViewController") as! NotificationSettingsViewController
+        self.showViewController(vc, sender: self)
+        
+    }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         print("Segue ID: \(segue.identifier)")

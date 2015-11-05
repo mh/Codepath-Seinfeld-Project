@@ -264,6 +264,14 @@
                                     <action selector="onSettingsTap:" destination="ysq-Wj-AB1" eventType="touchUpInside" id="zpb-z3-i6Y"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nVe-0D-2zz">
+                                <rect key="frame" x="10" y="24" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="habit settings"/>
+                                <connections>
+                                    <action selector="onHabitSettingsTap:" destination="ysq-Wj-AB1" eventType="touchUpInside" id="RcF-3B-R6o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>

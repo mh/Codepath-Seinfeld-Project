@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import Parse
 
 class CreateNewChallengeViewController: UIViewController {
 
     @IBOutlet weak var challengeInput: UITextField!
-
     @IBOutlet weak var demoGoalsImageView: UIImageView!
 
+    var challenges: [PFObject]!
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         let demoOriginalPosition = demoGoalsImageView.center
         
-        delay(0.7) { () -> () in
+        delay(0.1) { () -> () in
             self.challengeInput.becomeFirstResponder()
         }
         
@@ -40,11 +42,38 @@ class CreateNewChallengeViewController: UIViewController {
     }
     
     @IBAction func navigateToHome(sender: AnyObject) {
+        
+        // Set the storyboards that we will be transitioning to
         let createStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let createController = createStoryboard.instantiateViewControllerWithIdentifier("ActiveChallengeViewController") as UIViewController
+        let createController = createStoryboard.instantiateViewControllerWithIdentifier("ActiveChallengeViewController") as! ActiveChallengeViewController
+        
+        // Send the challengeInput to the string "challenge" that was created on the ActiveViewController
+        createController.challenge = self.challengeInput.text
+        createController.user = "userNameHere"
+
+        
+        // Transition to the next view controller
         self.presentViewController(createController, animated: true, completion: nil)
         
+        // Store the challenge
+        let challenge = PFObject(className: "Challenge")
+        
+        challenge["challengeText"] = challengeInput.text
+        challenge["userName"] = "userNameInfoHere" // Placeholder for user info
+       // challenge.setObject(challengeInput.text!, forKey: "1")
+        
+        // Save the data
+        challenge.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                print("Challenge Info: \(challenge)")
+            } else {
+                print("Error: \(error?.description) ")
+            }
+        }
     }
+    
+    
 
     /*
     // MARK: - Navigation

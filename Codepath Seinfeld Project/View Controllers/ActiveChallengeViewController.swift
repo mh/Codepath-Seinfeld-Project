@@ -12,18 +12,26 @@ let reuseIdentifier = "collCell"
 
 class ActiveChallengeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    // These items will be passed on segue
+    var user: String?
+    var challenge: String?
+    
     // Define the dictionary
     var days: [String] = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6"] // [NSDictionary]!
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var bottomSection: UIView!
     @IBOutlet weak var circularProgressView: KDCircularProgress!
+    @IBOutlet weak var challengeTitle: UILabel!
     
     
     @IBOutlet weak var settingsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: Add conditionals for pulling the challenge title
+        challengeTitle.text = challenge
         
         // Set background colors
         self.view.backgroundColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
@@ -81,16 +89,17 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         print("Segue ID: \(segue.identifier)")
         print("Sender: \(sender)")
+        
         if(segue.identifier == "detail"){
             let cell = sender as! CollectionViewCell
             let indexPath = collectionView?.indexPathForCell(cell)
-            let vc = segue.destinationViewController as! ChallengeHistoryViewController
+            let destinationVC = segue.destinationViewController as! ChallengeHistoryViewController
             
             print (cell.dayCardTitle.text)
-            print("View Controller: \(vc)")
+            print("View Controller: \(destinationVC)")
             
             // send the data to the next view controller
-            vc.dayCardTitle = self.days[indexPath!.row]
+            destinationVC.dayCardTitle = self.days[indexPath!.row]
 
         }
     }

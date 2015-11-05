@@ -7,31 +7,44 @@
 //
 
 import UIKit
+import Parse
 
 let reuseIdentifier = "collCell"
 
 class ActiveChallengeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     // These items will be passed on segue
+<<<<<<< Updated upstream
     var user: String?
     var challenge: String?
+    var challengeImage: UIImage?
+=======
+    var username: String?
+    var challengeText: String?
+>>>>>>> Stashed changes
     
     // Define the dictionary
     var days: [String] = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6"] // [NSDictionary]!
-
+    
+    // Outlets here
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var bottomSection: UIView!
     @IBOutlet weak var circularProgressView: KDCircularProgress!
     @IBOutlet weak var challengeTitle: UILabel!
+<<<<<<< Updated upstream
     
     
+    
+=======
+>>>>>>> Stashed changes
     @IBOutlet weak var settingsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Username: \(username)")
         
         // TODO: Add conditionals for pulling the challenge title
-        challengeTitle.text = challenge
+        challengeTitle.text = challengeText
         
         // Set background colors
         self.view.backgroundColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
@@ -47,6 +60,13 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         circularProgressView.trackColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
         circularProgressView.angle = 0
         circularProgressView.animateToAngle(144, duration: 1, completion: nil)
+        
+        // Load data from Parse
+       /* let query = PFQuery(className: "Challenge")
+        query.whereKey ("username", equalTo: username!)
+        query.findObjectsInBackgroundWithBlock { (objects:[PFObject]?, error:NSError?) -> Void in
+            print(objects)
+        } */
         
     }
     
@@ -73,6 +93,10 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
       //  let curr = indexPath.row % 5  + 1
       //  let imgName = "pin\(curr).jpg"
        // cell.dayCardImage.image = UIImage(named: imgName)
+        
+        if (challengeImage != nil) {
+            cell.dayCardXImage.image = challengeImage
+        }
         
         return cell
     }

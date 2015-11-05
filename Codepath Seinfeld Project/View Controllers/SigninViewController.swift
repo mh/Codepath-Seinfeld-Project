@@ -13,12 +13,10 @@ import AFNetworking
 
 class SigninViewController: UIViewController {
     
+    // Outlets
     @IBOutlet weak var nameTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var facebookLoginButton: UIButton!
-    
     @IBOutlet weak var errorLabel: UILabel!
     
     
@@ -35,10 +33,19 @@ class SigninViewController: UIViewController {
     }
     
     @IBAction func onSignIn(sender: UIButton) {
+        
         PFUser.logInWithUsernameInBackground(self.nameTextField.text!, password:self.passwordTextField.text!) {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
-                self.performSegueWithIdentifier("logInSegue", sender: nil)
+                let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewControllerWithIdentifier("ActiveChallengeViewController") as! ActiveChallengeViewController
+                self.showViewController(vc, sender: self)
+                vc.username = user?.username
+                print("vc.username: \(vc.username)")
+                print("nameTextField: \(self.nameTextField.text)")
+                print("Current User: \(PFUser.currentUser())")
+                
+                // self.performSegueWithIdentifier("logInSegue", sender: nil)
             } else {
                 // The login failed. Check error to see why.
             }
@@ -50,6 +57,7 @@ class SigninViewController: UIViewController {
         var user = PFUser()
         user.username = self.nameTextField.text
         user.password = self.passwordTextField.text
+        
         //        user.email = "email@example.com"
         // other fields can be set just like with PFObject
         //        user["phone"] = "415-392-0202"
@@ -58,13 +66,16 @@ class SigninViewController: UIViewController {
             (succeeded: Bool, error: NSError?) -> Void in
             if let error = error {
                 let errorString = error.userInfo["error"] as? NSString
-                
-                
                 self.errorLabel.text = errorString as? String
                 // Show the errorString somewhere and let the user try again.
             } else {
                 // Hooray! Let them use the app now.
-                self.performSegueWithIdentifier("logInSegue", sender: nil)
+                let storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
+                let vc = storyboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as! CreateNewChallengeViewController
+                self.showViewController(vc, sender: self)
+                vc.username = self.nameTextField.text!
+                
+                // old code: self.performSegueWithIdentifier("logInSegue", sender: nil)
             }
         }
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Complete Challenge View Controller-->
@@ -24,6 +24,9 @@
                                 <rect key="frame" x="0.0" y="603" width="375" height="64"/>
                                 <animations/>
                                 <state key="normal" image="Save Button "/>
+                                <connections>
+                                    <action selector="saveImageButton:" destination="moe-AE-ZAt" eventType="touchUpInside" id="WIb-bv-0AO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltg-IN-FrC">
                                 <rect key="frame" x="319" y="37" width="32" height="30"/>
@@ -44,11 +47,24 @@
                                 <animations/>
                                 <state key="normal" image="Back Button "/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcY-a0-OPv">
+                                <rect key="frame" x="1" y="0.0" width="374" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Adh-Zp-M9H">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="673"/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backButton" destination="prg-yR-qFl" id="CUJ-Qj-rbD"/>
+                        <outlet property="mainImageView" destination="tcY-a0-OPv" id="TFf-kY-Ury"/>
+                        <outlet property="missButton" destination="ltg-IN-FrC" id="S5U-Je-Gd8"/>
+                        <outlet property="saveButton" destination="hzo-43-9ww" id="eGM-Co-EjH"/>
+                        <outlet property="tempImageView" destination="Adh-Zp-M9H" id="RGv-Zm-usB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8a-MS-3Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="D9602B9F-B0E5-439A-ACF1-8AE458F4BB16" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-Ce-kal">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="11E3EAFD-02D0-4FC8-A25E-2217AAF2BA62" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-Ce-kal">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
@@ -86,11 +102,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back Button " width="20" height="37"/>
-        <image name="D9602B9F-B0E5-439A-ACF1-8AE458F4BB16" width="375" height="667">
+        <image name="11E3EAFD-02D0-4FC8-A25E-2217AAF2BA62" width="375" height="667">
             <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
-GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
+GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
 c1dOU0NvbG9ygAKADRIgwAAAgAOAC1p7Mzc1LCA2Njd90hUKFhhaTlMub2JqZWN0c6EXgASACtIVChod
 ohscgAWABoAJEADSIAohIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8SAA9NEk1NACoAD0Q8AAAA
 AAAAAAALAwcTTRYyfogmWeKaKmX+mytm/5srZv+bK2b/mytm/5srZv+bK2b/mytm/5srZv+bK2b/mytm
@@ -16806,16 +16821,18 @@ IABSAEcAQgAgAFAAcgBvAGYAaQBsAGV0ZXh0AAAAAENvcHlyaWdodCAyMDA3IEFwcGxlIEluYy4sIGFs
 bCByaWdodHMgcmVzZXJ2ZWQuAFhZWiAAAAAAAADzUgABAAAAARbPWFlaIAAAAAAAAHRNAAA97gAAA9BY
 WVogAAAAAAAAWnUAAKxzAAAXNFhZWiAAAAAAAAAoGgAAFZ8AALg2Y3VydgAAAAAAAAABAc0AAHNmMzIA
 AAAAAAEMQgAABd7///MmAAAHkgAA/ZH///ui///9owAAA9wAAMBs0iUmJyhaJGNsYXNzbmFtZVgkY2xh
-c3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCjJykqWk5TSW1hZ2VSZXBYTlNPYmplY3TSJSYsLVdOU0FycmF5
-oiwq0iUmLzBeTlNNdXRhYmxlQXJyYXmjLywq0zIzCjQ1NldOU1doaXRlXE5TQ29sb3JTcGFjZUQwIDAA
-EAOADNIlJjg5V05TQ29sb3KiOCrSJSY7PFdOU0ltYWdlojsqXxAPTlNLZXllZEFyY2hpdmVy0T9AVHJv
-b3SAAQAAAAgAAAARAAAAGgAAACMAAAAtAAAAMgAAADcAAABGAAAATAAAAFcAAABeAAAAZQAAAHIAAAB5
-AAAAgQAAAIMAAACFAAAAigAAAIwAAACOAAAAmQAAAJ4AAACpAAAAqwAAAK0AAACvAAAAtAAAALcAAAC5
-AAAAuwAAAL0AAAC/AAAAxAAAANsAAADdAAAA3wAPTfcAD038AA9OBwAPThAAD04jAA9OJwAPTjIAD047
-AA9OQAAPTkgAD05LAA9OUAAPTl8AD05jAA9OagAPTnIAD05/AA9OhAAPToYAD06IAA9OjQAPTpUAD06Y
-AA9OnQAPTqUAD06oAA9OugAPTr0AD07CAAAAAAAABAEAAAAAAAAAQQAAAAAAAAAAAAAAAAAPTsQ
+c3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCjKSorXxAQTlNCaXRtYXBJbWFnZVJlcFpOU0ltYWdlUmVwWE5T
+T2JqZWN00iUmLS5XTlNBcnJheaItK9IlJjAxXk5TTXV0YWJsZUFycmF5ozAtK9MzNAo1NjdXTlNXaGl0
+ZVxOU0NvbG9yU3BhY2VEMCAwABADgAzSJSY5OldOU0NvbG9yojkr0iUmPD1XTlNJbWFnZaI8K18QD05T
+S2V5ZWRBcmNoaXZlctFAQVRyb290gAEAAAAIAAAAEQAAABoAAAAjAAAALQAAADIAAAA3AAAARgAAAEwA
+AABXAAAAXgAAAGUAAAByAAAAeQAAAIEAAACDAAAAhQAAAIoAAACMAAAAjgAAAJkAAACeAAAAqQAAAKsA
+AACtAAAArwAAALQAAAC3AAAAuQAAALsAAAC9AAAAvwAAAMQAAADbAAAA3QAAAN8AD033AA9N/AAPTgcA
+D04QAA9OIwAPTicAD046AA9ORQAPTk4AD05TAA9OWwAPTl4AD05jAA9OcgAPTnYAD059AA9OhQAPTpIA
+D06XAA9OmQAPTpsAD06gAA9OqAAPTqsAD06wAA9OuAAPTrsAD07NAA9O0AAPTtUAAAAAAAAEAQAAAAAA
+AABCAAAAAAAAAAAAAAAAAA9O1w
 </mutableData>
         </image>
+        <image name="Back Button " width="20" height="37"/>
         <image name="Save Button " width="375" height="64"/>
         <image name="X Sketch" width="359" height="359"/>
     </resources>

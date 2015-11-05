@@ -11,6 +11,8 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dayCardImage: UIImageView!
     @IBOutlet weak var dayCardTitle: UILabel!
+    @IBOutlet weak var dayCardXImage: UIImageView!
+    
     
 }
 

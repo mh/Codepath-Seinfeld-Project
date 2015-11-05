@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Qyh-ZF-VSM">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="qf6-xH-gGz">
+>>>>>>> Stashed changes
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
@@ -89,7 +93,6 @@
                                 <state key="normal" image="Login with Faceboko Button"/>
                                 <connections>
                                     <action selector="loginWithFB:" destination="qf6-xH-gGz" eventType="touchUpInside" id="345-FZ-enw"/>
-                                    <segue destination="UkL-gk-15v" kind="modal" identifier="logInSegue" id="eix-y4-ece"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ou1-h2-2uJ">
@@ -105,7 +108,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -119,6 +122,7 @@
                         <outlet property="facebookLoginButton" destination="35C-cI-BgH" id="AXv-Kd-zME"/>
                         <outlet property="nameTextField" destination="RrE-vI-mXC" id="eZ7-wK-dJc"/>
                         <outlet property="passwordTextField" destination="PFn-9B-Oks" id="W1Z-ZT-RzS"/>
+                        <segue destination="UkL-gk-15v" kind="modal" identifier="logInSegue" id="xuB-nI-Kkj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHu-gE-Jis" userLabel="First Responder" sceneMemberID="firstResponder"/>

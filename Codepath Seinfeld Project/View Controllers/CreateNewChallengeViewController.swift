@@ -15,10 +15,13 @@ class CreateNewChallengeViewController: UIViewController {
     @IBOutlet weak var demoGoalsImageView: UIImageView!
 
     var challenges: [PFObject]!
+    var username: String!
+    let user = PFUser.currentUser()
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
+        print(username)
         let demoOriginalPosition = demoGoalsImageView.center
         
         delay(0.1) { () -> () in
@@ -48,19 +51,17 @@ class CreateNewChallengeViewController: UIViewController {
         let createController = createStoryboard.instantiateViewControllerWithIdentifier("ActiveChallengeViewController") as! ActiveChallengeViewController
         
         // Send the challengeInput to the string "challenge" that was created on the ActiveViewController
-        createController.challenge = self.challengeInput.text
-        createController.user = "userNameHere"
+        createController.challengeText = self.challengeInput.text
+        createController.username = username // this can be deleted (replaced with PFUser.currentUser())
 
-        
+        print ("Challenge Text: \(challengeInput.text)")
         // Transition to the next view controller
         self.presentViewController(createController, animated: true, completion: nil)
         
         // Store the challenge
         let challenge = PFObject(className: "Challenge")
-        
         challenge["challengeText"] = challengeInput.text
-        challenge["userName"] = "userNameInfoHere" // Placeholder for user info
-       // challenge.setObject(challengeInput.text!, forKey: "1")
+        challenge["user"] = PFUser.currentUser()
         
         // Save the data
         challenge.saveInBackgroundWithBlock {

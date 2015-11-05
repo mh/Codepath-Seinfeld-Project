@@ -14,14 +14,12 @@ let reuseIdentifier = "collCell"
 class ActiveChallengeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     // These items will be passed on segue
-<<<<<<< Updated upstream
     var user: String?
     var challenge: String?
     var challengeImage: UIImage?
-=======
+
     var username: String?
     var challengeText: String?
->>>>>>> Stashed changes
     
     // Define the dictionary
     var days: [String] = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6"] // [NSDictionary]!
@@ -31,12 +29,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     @IBOutlet weak var bottomSection: UIView!
     @IBOutlet weak var circularProgressView: KDCircularProgress!
     @IBOutlet weak var challengeTitle: UILabel!
-<<<<<<< Updated upstream
     
-    
-    
-=======
->>>>>>> Stashed changes
     @IBOutlet weak var settingsButton: UIButton!
     
     override func viewDidLoad() {

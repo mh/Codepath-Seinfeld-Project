@@ -96,11 +96,48 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     
     @IBAction func onSettingsTap(sender: UIButton) {
         
+        
+        let optionMenu = UIAlertController(title: nil, message: "Select Option", preferredStyle: .ActionSheet)
+        
+        
+        let deleteAction = UIAlertAction(title: "Delete Goal", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            print("delete")
+        })
+        let saveAction = UIAlertAction(title: "Sign Out", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            print("sign out")
+            var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
+            var vc = storyboard.instantiateViewControllerWithIdentifier("SigninViewController") as! SigninViewController
+            self.showViewController(vc, sender: self)
+        
+            //PFuser.logOutInBackground
+        })
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+            print("cancel")
+        })
+        
+        
+    
+        optionMenu.addAction(deleteAction)
+        optionMenu.addAction(saveAction)
+        optionMenu.addAction(cancelAction)
+        
+        // 5
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+        
+        
+        //NOAH COMMENTED OUT TO USE ACTION SHEET INSTEAD
+        /*
         var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
         var vc = storyboard.instantiateViewControllerWithIdentifier("SigninViewController") as! SigninViewController
         self.showViewController(vc, sender: self)
-        
-    }
+      */
+    
     
     
     @IBAction func onHabitSettingsTap(sender: AnyObject) {

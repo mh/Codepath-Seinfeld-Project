@@ -29,12 +29,15 @@ class CreateNewChallengeViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+<<<<<<< HEAD
         
         createChallengeNextButton.alpha = 0
         
         var demoOriginalPosition = demoGoalsImageView.center
+=======
         print(username)
-       // fixing due to conflcit let demoOriginalPosition = demoGoalsImageView.center
+        let demoOriginalPosition = demoGoalsImageView.center
+>>>>>>> origin/master
         
         delay(0.1) { () -> () in
             self.challengeInput.becomeFirstResponder()

@@ -24,6 +24,7 @@
             <string>Regan-Regular</string>
             <string>Regan-Regular</string>
             <string>Regan-Regular</string>
+            <string>Regan-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -63,7 +64,7 @@
                                 <rect key="frame" x="36" y="172" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="846-sq-a2v">
@@ -224,7 +225,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Asset-SetGoal_demogoals" id="sFw-Zp-LiO">
-                                <rect key="frame" x="-10" y="200" width="375" height="720"/>
+                                <rect key="frame" x="0.0" y="200" width="375" height="720"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                             </imageView>
@@ -255,7 +256,10 @@
                                 <animations/>
                                 <color key="textColor" red="0.98431372549019602" green="0.53725490196078429" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Regan-Regular" family="Regan" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="go"/>
+                                <connections>
+                                    <action selector="didInputChallenge:" destination="Qyh-ZF-VSM" eventType="editingChanged" id="r3s-CQ-qeP"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" id="nJw-wN-vJl">
                                 <rect key="frame" x="110" y="125" width="240" height="1"/>
@@ -264,7 +268,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WD1-Fs-ggy">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WD1-Fs-ggy">
                                 <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -274,6 +278,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="didPressCreateChallengeButton:" destination="Qyh-ZF-VSM" eventType="touchUpInside" id="ecM-7B-Lmb"/>
                                     <action selector="navigateToHome:" destination="Qyh-ZF-VSM" eventType="touchUpInside" id="4wY-JT-DHD"/>
                                 </connections>
                             </button>
@@ -294,8 +299,9 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="challengeInput" destination="YhR-81-tU4" id="anP-zJ-V2W"/>
-                        <outlet property="demoGoalsImageView" destination="sFw-Zp-LiO" id="Fcr-aN-hrd"/>
+                        <outlet property="challengeInput" destination="YhR-81-tU4" id="oSQ-KO-Enj"/>
+                        <outlet property="createChallengeNextButton" destination="WD1-Fs-ggy" id="DD4-hX-USX"/>
+                        <outlet property="demoGoalsImageView" destination="sFw-Zp-LiO" id="2WR-1J-gCl"/>
                         <outlet property="profileImageView" destination="EcB-SE-Uc2" id="2FU-c2-rSp"/>
                     </connections>
                 </viewController>

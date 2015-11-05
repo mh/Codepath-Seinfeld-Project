@@ -16,24 +16,64 @@ class CreateNewChallengeViewController: UIViewController {
 
     var challenges: [PFObject]!
     
+    @IBOutlet weak var createChallengeNextButton: UIButton!
+    
+    @IBAction func didPressCreateChallengeButton(sender: AnyObject) {
+        
+        //NEXT BUTTON ACTION
+    }
+
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let demoOriginalPosition = demoGoalsImageView.center
+        createChallengeNextButton.alpha = 0
+        
+        var demoOriginalPosition = demoGoalsImageView.center
         
         delay(0.1) { () -> () in
             self.challengeInput.becomeFirstResponder()
         }
+        self.challengeInput.becomeFirstResponder()
         
-        UIView.animateWithDuration(55.0, delay: 0, options: [], animations: { () -> Void in
-            let newCenter = CGPoint(x: demoOriginalPosition.x, y: demoOriginalPosition.y - (self.demoGoalsImageView.frame.size.height + 200))
+        if demoGoalsImageView.alpha == 1 {
             
-            self.demoGoalsImageView.center = newCenter
-            }) { (Bool) -> Void in
-                //COMPLETTION
+            UIView.animateWithDuration(55.0, delay: 0, options: [], animations: { () -> Void in
+                var newCenter = CGPoint(x: demoOriginalPosition.x, y: demoOriginalPosition.y - (self.demoGoalsImageView.frame.size.height + 200))
+                
+                self.demoGoalsImageView.center = newCenter
+                }) { (Bool) -> Void in
+                    //COMPLETTION
+                    
+            }
         }
+
+        else {
+                    }
+
+        
+
+        
+    }
+    @IBAction func didInputChallenge(sender: AnyObject) {
+        
+
+        if challengeInput.text?.utf16.count < 1 {
+            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                self.demoGoalsImageView.alpha = 1
+            })
+        }
+        else {
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                self.demoGoalsImageView.alpha = 0
+
+            })
+        }
+        
     }
 
+    override func viewDidLoad() {
+    }
     
     
     override func didReceiveMemoryWarning() {

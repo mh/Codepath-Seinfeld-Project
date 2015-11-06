@@ -288,18 +288,6 @@
                                     <action selector="navigateToHome:" destination="Qyh-ZF-VSM" eventType="touchUpInside" id="4wY-JT-DHD"/>
                                 </connections>
                             </button>
-<<<<<<< Updated upstream
-=======
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dkG-3O-maz">
-                                <rect key="frame" x="20" y="9" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="navigateToGoal:" destination="Qyh-ZF-VSM" eventType="touchUpInside" id="IMt-cc-ggx"/>
-                                </connections>
-                            </button>
->>>>>>> Stashed changes
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.33725490200000002" green="0.1764705882" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>

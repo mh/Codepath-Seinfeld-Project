@@ -86,7 +86,15 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
             let diff = cal.components(NSCalendarUnit.Day,
                 fromDate: date,
                 toDate: today, options: [])
-            self.daysIn = diff.day + 1
+            
+            if (self.challengeImage == nil) {
+                self.daysIn = diff.day
+
+            } else {
+                self.daysIn = diff.day + 1
+
+            }
+            
             let daysLeft = 30 - self.daysIn
             print("Days since challenge has begun \(self.daysIn)")
             
@@ -102,10 +110,6 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
             
             // Animate the progress bar
             
-            // Cheat it up on day 0
-            if self.daysIn == 0 {
-                self.daysIn = 1
-            }
             
             let progressPercent: Double = (Double(self.daysIn)/30.0) * 360.0
             print(progressPercent)

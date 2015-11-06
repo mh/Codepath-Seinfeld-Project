@@ -256,15 +256,6 @@
                                     <action selector="onSettingsTap:" destination="ysq-Wj-AB1" eventType="touchUpInside" id="zpb-z3-i6Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nVe-0D-2zz">
-                                <rect key="frame" x="10" y="24" width="94" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="habit settings"/>
-                                <connections>
-                                    <action selector="onHabitSettingsTap:" destination="ysq-Wj-AB1" eventType="touchUpInside" id="RcF-3B-R6o"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
@@ -283,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30F-9k-XrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882.5" y="215.5"/>
+            <point key="canvasLocation" x="861.5" y="215.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q2M-fm-Gnf">

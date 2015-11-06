@@ -111,14 +111,6 @@ class CreateNewChallengeViewController: UIViewController {
         self.presentViewController(createController, animated: true, completion: nil)
     }
     
-    
-    @IBAction func navigateToGoal(sender: AnyObject) {
-        let createStoryboard = UIStoryboard(name: "Capture", bundle: nil)
-        let createController = createStoryboard.instantiateViewControllerWithIdentifier("CompleteChallengeViewController") as UIViewController
-        self.presentViewController(createController, animated: true, completion: nil)
-    }
-    
-    
 
     /*
     // MARK: - Navigation

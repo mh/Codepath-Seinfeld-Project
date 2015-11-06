@@ -87,6 +87,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
                 fromDate: date,
                 toDate: today, options: [])
             
+            // HACK: make this dynamically update it
             if (self.challengeImage == nil) {
                 self.daysIn = diff.day
 
@@ -130,11 +131,12 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         //#warning Incomplete method implementation -- Return the number of sections
-        return 1
+        return daysIn
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
+        
         return daysIn
     }
     
@@ -164,6 +166,16 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         let optionMenu = UIAlertController(title: nil, message: "Select Option", preferredStyle: .ActionSheet)
         
         
+        let habitAction = UIAlertAction(title: "Notifications Settings", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            print("notification")
+            var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
+            var vc = storyboard.instantiateViewControllerWithIdentifier("NotificationSettingsViewController") as! NotificationSettingsViewController
+            self.showViewController(vc, sender: self)
+            
+            //PFuser.logOutInBackground
+        })
+        
         let deleteAction = UIAlertAction(title: "Delete Goal", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
             print("delete")
@@ -185,7 +197,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         })
         
         
-    
+        optionMenu.addAction(habitAction)
         optionMenu.addAction(deleteAction)
         optionMenu.addAction(saveAction)
         optionMenu.addAction(cancelAction)
@@ -202,14 +214,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         self.showViewController(vc, sender: self)
       */
     
-    
-    
-    @IBAction func onHabitSettingsTap(sender: AnyObject) {
-        var storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
-        var vc = storyboard.instantiateViewControllerWithIdentifier("NotificationSettingsViewController") as! NotificationSettingsViewController
-        self.showViewController(vc, sender: self)
-        
-    }
+
     
     
     

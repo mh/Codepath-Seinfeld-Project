@@ -84,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="36D1C2F4-4813-4601-BA19-568932656BC8" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-Ce-kal">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="043E0D5D-C9BB-420D-BC0E-3CB1B2520941" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-Ce-kal">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
                             </imageView>
@@ -104,7 +104,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="36D1C2F4-4813-4601-BA19-568932656BC8" width="375" height="667">
+        <image name="043E0D5D-C9BB-420D-BC0E-3CB1B2520941" width="375" height="667">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

@@ -54,7 +54,7 @@ class SigninViewController: UIViewController {
     
     
     @IBAction func onSignUp(sender: UIButton) {
-        var user = PFUser()
+        let user = PFUser()
         user.username = self.nameTextField.text
         user.password = self.passwordTextField.text
         
@@ -67,15 +67,14 @@ class SigninViewController: UIViewController {
             if let error = error {
                 let errorString = error.userInfo["error"] as? NSString
                 self.errorLabel.text = errorString as? String
-                // Show the errorString somewhere and let the user try again.
+                // Show the errorString and let the user try again.
             } else {
                 // Hooray! Let them use the app now.
                 let storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
                 let vc = storyboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as! CreateNewChallengeViewController
                 self.showViewController(vc, sender: self)
-                vc.username = self.nameTextField.text!
-                
-                // old code: self.performSegueWithIdentifier("logInSegue", sender: nil)
+                print("Current User: \(PFUser.currentUser())")
+
             }
         }
     }

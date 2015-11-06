@@ -15,8 +15,6 @@ class CreateNewChallengeViewController: UIViewController {
     @IBOutlet weak var demoGoalsImageView: UIImageView!
 
     var challenges: [PFObject]!
-    var username: String!
-    let user = PFUser.currentUser()
     
     
     @IBOutlet weak var createChallengeNextButton: UIButton!
@@ -30,10 +28,9 @@ class CreateNewChallengeViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        createChallengeNextButton.alpha = 0
+        createChallengeNextButton.alpha = 1
         
         var demoOriginalPosition = demoGoalsImageView.center
-        print(username)
        // fixing due to conflcit let demoOriginalPosition = demoGoalsImageView.center
         
         delay(0.1) { () -> () in
@@ -62,7 +59,6 @@ class CreateNewChallengeViewController: UIViewController {
     }
     @IBAction func didInputChallenge(sender: AnyObject) {
         
-
         if challengeInput.text?.utf16.count < 1 {
             UIView.animateWithDuration(0.2, animations: { () -> Void in
                 self.demoGoalsImageView.alpha = 1
@@ -71,7 +67,6 @@ class CreateNewChallengeViewController: UIViewController {
         else {
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 self.demoGoalsImageView.alpha = 0
-
             })
         }
         
@@ -94,16 +89,13 @@ class CreateNewChallengeViewController: UIViewController {
         
         // Send the challengeInput to the string "challenge" that was created on the ActiveViewController
         createController.challengeText = self.challengeInput.text
-        createController.username = username // this can be deleted (replaced with PFUser.currentUser())
 
-        print ("Challenge Text: \(challengeInput.text)")
-        // Transition to the next view controller
-        self.presentViewController(createController, animated: true, completion: nil)
-        
         // Store the challenge
         let challenge = PFObject(className: "Challenge")
         challenge["challengeText"] = challengeInput.text
         challenge["user"] = PFUser.currentUser()
+        
+        print ("Challenge Text: \(challengeInput.text)")
         
         // Save the data
         challenge.saveInBackgroundWithBlock {
@@ -114,6 +106,9 @@ class CreateNewChallengeViewController: UIViewController {
                 print("Error: \(error?.description) ")
             }
         }
+        
+        // Transition to the next view controller
+        self.presentViewController(createController, animated: true, completion: nil)
     }
     
     

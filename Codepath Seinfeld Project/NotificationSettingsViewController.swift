@@ -46,6 +46,9 @@ class NotificationSettingsViewController: UIViewController {
     }
     
     
+    @IBAction func saveChangesAndDismissAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: {});
+    }
 
     /*
     // MARK: - Navigation

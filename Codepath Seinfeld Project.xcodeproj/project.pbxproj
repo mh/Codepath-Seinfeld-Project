@@ -57,7 +57,7 @@
 		4F15F79F1BDF0A45007BB3F3 /* The Northern Block - Regan-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Northern Block - Regan-Medium.otf"; path = "Codepath Seinfeld Project/The Northern Block - Regan-Medium.otf"; sourceTree = "<group>"; };
 		4F15F7A01BDF0A45007BB3F3 /* The Northern Block - Regan-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "The Northern Block - Regan-Regular.otf"; path = "Codepath Seinfeld Project/The Northern Block - Regan-Regular.otf"; sourceTree = "<group>"; };
 		4F15F7A41BDF3759007BB3F3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		4F498EE81BE85FE600BA1B8B /* NotificationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationSettingsViewController.swift; path = "Codepath Seinfeld Project/NotificationSettingsViewController.swift"; sourceTree = "<group>"; };
+		4F498EE81BE85FE600BA1B8B /* NotificationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingsViewController.swift; sourceTree = "<group>"; };
 		A977BC777F4586CDD2EA06C5 /* Pods-Codepath Seinfeld Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codepath Seinfeld Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codepath Seinfeld Project/Pods-Codepath Seinfeld Project.debug.xcconfig"; sourceTree = "<group>"; };
 		EC4A31051BD0A38300785025 /* Codepath Seinfeld Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codepath Seinfeld Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4A31081BD0A38300785025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +133,6 @@
 		EC4A30FC1BD0A38300785025 = {
 			isa = PBXGroup;
 			children = (
-				4F498EE81BE85FE600BA1B8B /* NotificationSettingsViewController.swift */,
 				EC4A31071BD0A38300785025 /* Codepath Seinfeld Project */,
 				EC4A311C1BD0A38300785025 /* Codepath Seinfeld ProjectTests */,
 				EC4A31271BD0A38300785025 /* Codepath Seinfeld ProjectUITests */,
@@ -160,6 +159,7 @@
 		EC4A31071BD0A38300785025 /* Codepath Seinfeld Project */ = {
 			isa = PBXGroup;
 			children = (
+				4F498EE81BE85FE600BA1B8B /* NotificationSettingsViewController.swift */,
 				ECC2ED3C1BE035B400F14751 /* KDCircularProgress.swift */,
 				EC4A31411BD7011600785025 /* Signin */,
 				EC4A31081BD0A38300785025 /* AppDelegate.swift */,

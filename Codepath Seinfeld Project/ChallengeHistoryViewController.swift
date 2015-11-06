@@ -12,7 +12,9 @@ class ChallengeHistoryViewController: UIViewController {
 
     var currImage: UIImage?
     var dayCardTitle: String?
+    var challengeImage: UIImage?
 
+    @IBOutlet weak var challXcardImage: UIImageView!
     @IBOutlet weak var dayText: UILabel!
     
     override func viewDidLoad() {
@@ -21,6 +23,7 @@ class ChallengeHistoryViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 175/255, green: 62/255, blue: 121/255, alpha: 0.3)
         
         dayText.text = dayCardTitle
+        challXcardImage.image = challengeImage
         // Do any additional setup after loading the view.
     }
 

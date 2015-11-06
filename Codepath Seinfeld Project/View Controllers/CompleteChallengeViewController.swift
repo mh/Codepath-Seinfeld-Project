@@ -123,7 +123,6 @@ class CompleteChallengeViewController: UIViewController {
         // Send the challengeInput to the string "challenge" that was created on the ActiveViewController
         createController.challengeImage = challengeImage
         
-        
         // Transition to the next view controller
         self.presentViewController(createController, animated: true, completion: nil)
     }

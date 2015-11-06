@@ -20,6 +20,9 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
 
     var username: String?
     var challengeText: String?
+    var challenges: [PFObject]!
+    
+    var daysIn = 1
     
     // Define the dictionary
     var days: [String] = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6"] // [NSDictionary]!
@@ -29,12 +32,16 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     @IBOutlet weak var bottomSection: UIView!
     @IBOutlet weak var circularProgressView: KDCircularProgress!
     @IBOutlet weak var challengeTitle: UILabel!
-    
     @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var numberOfDaysLabel: UILabel!
+    @IBOutlet weak var numberOfDaysInLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Username: \(username)")
+        
+        challenges = []
         
         // TODO: Add conditionals for pulling the challenge title
         challengeTitle.text = challengeText
@@ -52,14 +59,63 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
 
         circularProgressView.trackColor = UIColor(red: 84/255, green: 41/255, blue: 127/255, alpha: 1)
         circularProgressView.angle = 0
-        circularProgressView.animateToAngle(144, duration: 1, completion: nil)
         
-        // Load data from Parse
-       /* let query = PFQuery(className: "Challenge")
-        query.whereKey ("username", equalTo: username!)
+        let query = PFQuery(className: "Challenge")
+    
+        query.whereKey("user", equalTo: PFUser.currentUser()!)
         query.findObjectsInBackgroundWithBlock { (objects:[PFObject]?, error:NSError?) -> Void in
-            print(objects)
-        } */
+            
+            print("Objects: \(objects)")
+            self.challenges = objects
+            
+            // select the last challenge they created
+            let lastChallenge = objects?.last?.objectForKey("challengeText") as! String
+            print("Challenge Name: \(lastChallenge)")
+            self.challengeTitle.text = lastChallenge
+            
+            // lets find out what date this was created
+            print("Created At \(objects?.last?.createdAt)")
+            let date = objects?.last?.createdAt! as NSDate!
+            print(date)
+            
+            // determine today
+            let cal = NSCalendar.currentCalendar()
+            let today = cal.startOfDayForDate(NSDate())
+            
+            // calculate how many days between signup date and today
+            let diff = cal.components(NSCalendarUnit.Day,
+                fromDate: date,
+                toDate: today, options: [])
+            self.daysIn = diff.day + 1
+            let daysLeft = 30 - self.daysIn
+            print("Days since challenge has begun \(self.daysIn)")
+            
+            // Update the labels in the view
+            self.numberOfDaysLabel.text = String(daysLeft)
+            
+            if self.daysIn == 1 {
+                self.numberOfDaysInLabel.text = "\(String(self.daysIn)) DAY IN"
+            } else {
+                self.numberOfDaysInLabel.text = "\(String(self.daysIn)) DAYS IN"
+            }
+            
+            
+            // Animate the progress bar
+            
+            // Cheat it up on day 0
+            if self.daysIn == 0 {
+                self.daysIn = 1
+            }
+            
+            let progressPercent: Double = (Double(self.daysIn)/30.0) * 360.0
+            print(progressPercent)
+            print((self.daysIn/30) * 360)
+            print((Int(self.daysIn/30) * 360))
+            
+            self.circularProgressView.animateToAngle(Int(progressPercent), duration: 1, completion: nil)
+        }
+        
+        
         
     }
     
@@ -75,7 +131,7 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //#warning Incomplete method implementation -- Return the number of items in the section
-        return days.count
+        return daysIn
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -89,7 +145,11 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         
         if (challengeImage != nil) {
             cell.dayCardXImage.image = challengeImage
+        } else {
+            // Hide the X
+            cell.dayCardXImage.alpha = 0
         }
+        
         
         return cell
     }
@@ -154,15 +214,27 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
         print("Sender: \(sender)")
         
         if(segue.identifier == "detail"){
-            let cell = sender as! CollectionViewCell
-            let indexPath = collectionView?.indexPathForCell(cell)
-            let destinationVC = segue.destinationViewController as! ChallengeHistoryViewController
             
-            print (cell.dayCardTitle.text)
-            print("View Controller: \(destinationVC)")
+            if (self.challengeImage != nil) {
+                // take them to detail view
+                let cell = sender as! CollectionViewCell
+                let indexPath = collectionView?.indexPathForCell(cell)
+                let destinationVC = segue.destinationViewController as! ChallengeHistoryViewController
+                
+                print (cell.dayCardTitle.text)
+                print("View Controller: \(destinationVC)")
+                
+                // send the data to the next view controller
+                destinationVC.dayCardTitle = self.days[indexPath!.row]
+                destinationVC.challengeImage = challengeImage
+                
+            } else {
+                // Take them to Draw the X
+                let createStoryboard = UIStoryboard(name: "Capture", bundle: nil)
+                let createController = createStoryboard.instantiateViewControllerWithIdentifier("CompleteChallengeViewController") as UIViewController
+                self.presentViewController(createController, animated: true, completion: nil)
             
-            // send the data to the next view controller
-            destinationVC.dayCardTitle = self.days[indexPath!.row]
+            }
 
         }
     }

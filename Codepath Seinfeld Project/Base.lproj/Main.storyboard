@@ -101,6 +101,14 @@
                                     <action selector="dissmissAction:" destination="Kbc-fw-EeG" eventType="touchUpInside" id="1Vh-S6-Lk6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pfo-kb-IQZ">
+                                <rect key="frame" x="18" y="554" width="337" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="showCelebrationAnimation:" destination="Kbc-fw-EeG" eventType="touchUpInside" id="oAp-bc-kXF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

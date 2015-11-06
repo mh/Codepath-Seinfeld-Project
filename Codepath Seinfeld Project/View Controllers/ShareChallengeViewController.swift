@@ -24,7 +24,7 @@ class ShareChallengeViewController: UIViewController {
 
     
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -257,7 +257,11 @@ class ShareChallengeViewController: UIViewController {
     @IBAction func didPressNewGoalBtn(sender: AnyObject) {
         // TRANSITION TO CREATE CHALLENGE VC
         print("pressed new goal")
+        // self.dismissViewControllerAnimated(true, completion: {});
 
+        let storyboard: UIStoryboard = UIStoryboard(name: "Signin", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("CreateNewChallengeViewController") as! CreateNewChallengeViewController
+        self.showViewController(vc, sender: self)
     }
     @IBAction func didPressShareButton(sender: UIButton) {
         // SHOW SHARE OPTIONS?

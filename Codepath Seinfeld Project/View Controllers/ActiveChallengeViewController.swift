@@ -64,18 +64,18 @@ class ActiveChallengeViewController: UIViewController, UICollectionViewDataSourc
     
         query.whereKey("user", equalTo: PFUser.currentUser()!)
         query.findObjectsInBackgroundWithBlock { (objects:[PFObject]?, error:NSError?) -> Void in
-            
+         
             print("Objects: \(objects)")
             self.challenges = objects
             
             // select the last challenge they created
-            let lastChallenge = objects?.last?.objectForKey("challengeText") as! String
+            let lastChallenge = objects?.first?.objectForKey("challengeText") as! String
             print("Challenge Name: \(lastChallenge)")
             self.challengeTitle.text = lastChallenge
             
             // lets find out what date this was created
-            print("Created At \(objects?.last?.createdAt)")
-            let date = objects?.last?.createdAt! as NSDate!
+            print("Created At \(objects?.first?.createdAt)")
+            let date = objects?.first?.createdAt! as NSDate!
             print(date)
             
             // determine today

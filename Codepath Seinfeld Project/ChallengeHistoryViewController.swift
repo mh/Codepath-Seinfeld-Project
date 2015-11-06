@@ -32,6 +32,12 @@ class ChallengeHistoryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func showCelebrationAnimation(sender: AnyObject) {
+        
+        let createStoryboard = UIStoryboard(name: "Capture", bundle: nil)
+        let createController = createStoryboard.instantiateViewControllerWithIdentifier("ShareChallengeViewController") as UIViewController
+        self.presentViewController(createController, animated: true, completion: nil)
+    }
 
     @IBAction func dissmissAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {});
